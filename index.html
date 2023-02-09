@@ -15,13 +15,17 @@
 
     <link href="./assets/css/theme.css" rel="stylesheet">
     <link href="./assets/css/extra.css" rel="stylesheet">
+
+    <script src="./assets/js/product-card.js" defer="defer"></script>
 </head>
 <body class="bg-purple-100 mt-[10%] mx-[10%]">
     <main class="grid grid-cols-1 md:grid-cols-2 items-center gap-3">
-        <section class="relative">
-            <img class="absolute z-10 top-0 right-position" src="./assets/imgs/rotate.svg" alt="rotate 360º icon">
-            <img class="w-full" src="./assets/imgs/product.png" alt="big sofa">
-        </section>
+        <product-card data-rotate="false" class="relative">
+            <button id="rotation-btn" class="inline-block border-none bg-transparent absolute z-10 top-0 right-position">
+                <img id="rotate-icon" src="./assets/imgs/rotate.svg" alt="rotate 360º icon">
+            </button>
+            <img id="product-img" class="w-full" src="./assets/imgs/product.png" alt="big sofa">
+        </product-card>
         <section>
             <div class="flex flex-col gap-3">
                 <span class="font-lato font-thin text-purple-800 uppercase text-2sm leading-2small">CÓDIGO: 42404</span>
