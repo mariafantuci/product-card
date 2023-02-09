@@ -11,7 +11,15 @@ module.exports = {
 			fontFamily: {
 				crimson: ["Crimson Pro", "serif"],
 				lato: ["Lato", "serif"],
-			}
+			},
+      fontSize: {
+        "2sm": '0.625rem',
+        "text-32": "2rem"
+      },
+      lineHeight: {
+        '2small': '0.625rem',
+        "32": "2rem"
+      }
     },
   },
   plugins: [],
